@@ -1,0 +1,50 @@
+[
+  {
+    "merchantId": 1,
+    "businessName": "No Devices Limited",
+    "accountNumber": "1234567950",
+    "phoneNumber": "+2347144142404",
+    "emailAddress": "one_deviceng@gmail.com",
+    "availableBalance": 785908.97,
+    "walletStatus": "Active"
+  },
+  {
+    "merchantId": 2,
+    "businessName": "One device Limited",
+    "accountNumber": "1234567950",
+    "phoneNumber": "+2347144142404",
+    "emailAddress": "one_deviceng@gmail.com",
+    "availableBalance": 782651.70,
+    "walletStatus": "Active"
+
+  },
+  {
+    "merchantId": 3,
+    "businessName": "One device Limited",
+    "accountNumber": "1234567950",
+    "phoneNumber": "+2347144142404",
+    "emailAddress": "several_deviceng@gmail.com",
+    "availableBalance": 261678.97,
+    "walletStatus": "Active"
+  },
+
+  {
+    "merchantId": 4,
+    "businessName": "Shop Rite",
+    "accountNumber": "1234567950",
+    "phoneNumber": "+2347144142404",
+    "emailAddress": "chukwudereadindu@gmail.com",
+    "availableBalance": 922622.45,
+    "walletStatus": "Active"
+  },
+  {
+    "merchantId": 5,
+    "businessName": "Felix Corporation",
+    "accountNumber": "1234117950",
+    "phoneNumber": "+2347144142404",
+    "emailAddress": "felixofoe@gmail.com",
+    "availableBalance": 721633.65,
+    "walletStatus": "Active"
+  }
+  ]
+

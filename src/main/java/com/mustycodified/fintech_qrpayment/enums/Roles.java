@@ -10,8 +10,9 @@ import static com.mustycodified.fintech_qrpayment.enums.UserPermissions.*;
 
 @Getter
 public enum Roles {
-    ROLE_USER(Sets.newHashSet(USER_EDIT, USER_READ)),
-    ROLE_ADMIN(Sets.newHashSet(USER_DELETE, USER_READ, USER_EDIT));
+    USER(Sets.newHashSet(TRANSACTION_INITIATE, TRANSACTION_COMPLETE)),
+    MERCHANT(Sets.newHashSet(TRANSACTION_READ));
+
     private final Set<UserPermissions> permissions;
 
     Roles(Set<UserPermissions> permissions){

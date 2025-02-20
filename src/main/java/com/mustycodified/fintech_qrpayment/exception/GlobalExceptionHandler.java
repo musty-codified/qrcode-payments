@@ -30,8 +30,6 @@ public class GlobalExceptionHandler {
         return new ResponseEntity<>(new ApiResponse<>(false, "Input not Valid", errors), BAD_REQUEST);
     }
 
-
-
     @ExceptionHandler({MethodArgumentTypeMismatchException.class})
     public ResponseEntity<ApiResponse<Map<String, String>>> handleRequestPathVariableException(MethodArgumentTypeMismatchException ex) {
         Map<String, String> errors = new HashMap<>();

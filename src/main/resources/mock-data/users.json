@@ -1,0 +1,32 @@
+[
+  {
+    "userId": 1,
+    "name": "John User",
+    "accountNumber": "1234567950",
+    "phoneNumber": "+2347144142404",
+    "emailAddress": "one_deviceng@gmail.com",
+    "availableBalance": 5990.77,
+    "walletStatus": "Active"
+  },
+  {
+    "userId": 2,
+    "name": "Jane User",
+    "accountNumber": "1234567950",
+    "phoneNumber": "+2347144142404",
+    "emailAddress": "one_deviceng@gmail.com",
+    "availableBalance": 7816.97,
+    "walletStatus": "Active"
+
+  },
+  {
+    "userId": 3,
+    "name": "Harry User",
+    "accountNumber": "1234567950",
+    "phoneNumber": "+2347144142404",
+    "emailAddress": "several_deviceng@gmail.com",
+    "availableBalance": 7886.17,
+    "walletStatus": "Active",
+    "accountName": "Several Devices"
+  }
+  ]
+

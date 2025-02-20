@@ -4,10 +4,9 @@ import lombok.Getter;
 
 @Getter
 public enum UserPermissions {
-    USER_READ("user.read"),
-    USER_EDIT("user.edit"),
-    USER_DELETE("user.delete");
-
+    TRANSACTION_INITIATE("transaction.initiate"),
+    TRANSACTION_COMPLETE("transaction.complete"),
+    TRANSACTION_READ("transaction.read");
     private final String permission;
     UserPermissions(String permission){
         this.permission=permission;
