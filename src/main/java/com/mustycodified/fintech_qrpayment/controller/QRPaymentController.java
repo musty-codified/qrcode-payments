@@ -85,7 +85,7 @@ public class QRPaymentController {
 
         synchronized (user) { // Lock user to prevent double spending
             if (user.getAvailableBalance().compareTo(request.getAmount()) < 0) {
-                throw new  RuntimeException("Insufficient funds");
+                throw new RuntimeException("Insufficient funds");
             }
 
             user.setAvailableBalance(user.getAvailableBalance().subtract(request.getAmount()));
