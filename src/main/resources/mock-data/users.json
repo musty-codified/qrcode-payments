@@ -5,7 +5,7 @@
     "accountNumber": "1234567950",
     "phoneNumber": "+2347144142404",
     "emailAddress": "one_deviceng@gmail.com",
-    "availableBalance": 5990.77,
+    "availableBalance": 100,
     "walletStatus": "Active"
   },
   {
@@ -14,7 +14,7 @@
     "accountNumber": "1234567950",
     "phoneNumber": "+2347144142404",
     "emailAddress": "one_deviceng@gmail.com",
-    "availableBalance": 7816.97,
+    "availableBalance": 100,
     "walletStatus": "Active"
 
   },
@@ -24,7 +24,7 @@
     "accountNumber": "1234567950",
     "phoneNumber": "+2347144142404",
     "emailAddress": "several_deviceng@gmail.com",
-    "availableBalance": 7886.17,
+    "availableBalance": 100,
     "walletStatus": "Active",
     "accountName": "Several Devices"
   }
