@@ -73,6 +73,7 @@ public class QRPaymentController {
 
     @PostMapping("/process")
     public ResponseEntity<ApiResponse<PaymentResponse>> processPayment(@Valid @RequestBody PaymentProcessingRequest request) {
+        Long transactionId;
         Optional<User> userOpt = users.stream()
                 .filter(merchant -> merchant.getUserId().equals(request.getUserId())).findAny();
         Optional<Merchant> merchantOpt = merchants.stream()
@@ -93,14 +94,20 @@ public class QRPaymentController {
 
             users.add(user);
             merchants.add(merchant);
-            transactions.add(new Transaction(request.getUserId(), request.getMerchantId(), request.getAmount(), request.getCurrency(), "SUCCESS"));
+            transactions.add(new Transaction(
+                    request.getUserId(),
+                    request.getMerchantId(),
+                    request.getAmount(),
+                    request.getCurrency(),
+                    "SUCCESS"));
+
         }
 
         return ResponseEntity.ok(new ApiResponse<>(true, "Request successfully processed", new PaymentResponse(user.getAvailableBalance(), merchant.getAvailableBalance())));
     }
 
     private String encrypt(String qrData) throws NoSuchPaddingException, NoSuchAlgorithmException, InvalidKeyException {
-        char [] password = appUtil.generateRandomString(10).toCharArray();
+        char[] password = appUtil.generateRandomString(10).toCharArray();
         String salt = appUtil.generateRandomString(15);
         /* Derive the key, given password and salt. */
         SecretKeyFactory factory = SecretKeyFactory.getInstance("PBKDF2WithHmacSHA256");

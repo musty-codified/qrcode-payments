@@ -1,26 +1,26 @@
 [
   {
+    "transactionId": 1,
     "userId": 1,
     "merchantId": 1,
-    "reference": "Ref",
     "phoneNumber": "+2347144142404",
     "currency": "Naira",
     "amount": 7859,
     "status": "Active"
   },
   {
+    "transactionId": 2,
     "userId": 2,
     "merchantId": 2,
-    "reference": "Ref",
     "phoneNumber": "+2347144142404",
     "currency": "Naira",
     "amount": 7859,
     "status": "Active"
   },
   {
+    "transaction": 3,
     "userId": 3,
     "merchantId": 3,
-    "reference": "Ref",
     "phoneNumber": "+2347144142404",
     "currency": "Naira",
     "amount": 7859,

@@ -1,0 +1,188 @@
+{
+  "info": {
+    "_postman_id": "b158ee96-323e-4331-a9b1-1399c5e72677",
+    "name": "qr-payment",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "24307170"
+  },
+  "item": [
+    {
+      "name": "Generate QR Code",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n    \"amount\":5000,\n    \"currency\":\"Naira\",\n    \"merchantId\":1,\n    \"description\":\"QR code payment\"\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:9000/api/v1/payments/generate",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "9000",
+          "path": [
+            "api",
+            "v1",
+            "payments",
+            "generate"
+          ]
+        }
+      },
+      "response": [
+        {
+          "name": "Generate QR Code",
+          "originalRequest": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n    \"amount\":5000,\n    \"currency\":\"Naira\",\n    \"merchantId\":1,\n    \"description\":\"QR code payment\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:9000/api/v1/payments/generate",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "9000",
+              "path": [
+                "api",
+                "v1",
+                "payments",
+                "generate"
+              ]
+            }
+          },
+          "status": "OK",
+          "code": 200,
+          "_postman_previewlanguage": "json",
+          "header": [
+            {
+              "key": "Content-Type",
+              "value": "application/json"
+            },
+            {
+              "key": "Transfer-Encoding",
+              "value": "chunked"
+            },
+            {
+              "key": "Date",
+              "value": "Thu, 20 Feb 2025 14:56:11 GMT"
+            },
+            {
+              "key": "Keep-Alive",
+              "value": "timeout=60"
+            },
+            {
+              "key": "Connection",
+              "value": "keep-alive"
+            }
+          ],
+          "cookie": [],
+          "body": "{\n    \"success\": true,\n    \"message\": \"Request successfully processed\",\n    \"data\": {\n        \"qrCode\": \"iVBORw0KGgoAAAANSUhEUgAAAMgAAADIAQAAAACFI5MzAAABcklEQVR4Xu2XTY6DMAyFH2KRJUfITeBilUDiYnCTHIFlFgiPX1A7UHWW85iRsNQ2+GNh+efFhf1keHe87CY3of0NkgDUCW0z8Gnwp0ZN/DMmdEtvqGw02+QkoxlTrmyI6PhOew0JszvzhcRoDPASYqyPTWyTT5UTkNKjuWWR2Kjv3fv7ZLewudOL9DQlSWFDbTaXU7PGQ9QqQqehRe8dsjyOeVOR3C2INjVD5JSclEJErODKVoRXqGIyL4C3p5829KVSWmK5xYNhDXirj4yEeaktmDvNvyKjFBOWJpYBcVxTueXEE+KJ2SvVU77FhBrpP5tjD2uFX51iwsF0qQbbhKfvOZUROqOHNcAFy0/lbSVJgbdmplr61blPrJYUI17B5jhsDiqSPJ6atFxXp91FRYzZCewLylQKk5zsG+REqS71OcypkFC06z2sQ+9IiSfmuT2ds6MgxvqQRN4d6QIC7rCB/ySoWrYHqCSf7SY3of1P8gXQC5Tv8Hf8/QAAAABJRU5ErkJggg==\"\n    }\n}"
+        }
+      ]
+    },
+    {
+      "name": "Process Payment",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n\n    \"userId\": 1,\n    \"merchantId\":1,\n    \"amount\":5000,\n    \"currency\":\"Naira\"\n\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:9000/api/v1/payments/process",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "9000",
+          "path": [
+            "api",
+            "v1",
+            "payments",
+            "process"
+          ]
+        }
+      },
+      "response": [
+        {
+          "name": "New Request",
+          "originalRequest": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n\n    \"userId\": 1,\n    \"merchantId\":1,\n    \"amount\":5000,\n    \"currency\":\"Naira\"\n\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:9000/api/v1/payments/process",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "9000",
+              "path": [
+                "api",
+                "v1",
+                "payments",
+                "process"
+              ]
+            }
+          },
+          "status": "OK",
+          "code": 200,
+          "_postman_previewlanguage": "json",
+          "header": [
+            {
+              "key": "Content-Type",
+              "value": "application/json"
+            },
+            {
+              "key": "Transfer-Encoding",
+              "value": "chunked"
+            },
+            {
+              "key": "Date",
+              "value": "Thu, 20 Feb 2025 13:37:36 GMT"
+            },
+            {
+              "key": "Keep-Alive",
+              "value": "timeout=60"
+            },
+            {
+              "key": "Connection",
+              "value": "keep-alive"
+            }
+          ],
+          "cookie": [],
+          "body": "{\n    \"success\": true,\n    \"message\": \"Request successfully processed\",\n    \"data\": {\n        \"userBalance\": 785917616.97,\n        \"merchantBalance\": 785927616.97\n    }\n}"
+        }
+      ]
+    }
+  ]
+}
