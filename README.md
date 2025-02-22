@@ -41,7 +41,7 @@ The REST API endpoints are prefixed with `/api/v1` due to the context-path setti
 
 ### 4.1 Testing
 
-- Use Postman to send requests **import [qr-payment.postman-collection.json](qr-payment.postman-collection.json)**.
+- Use Postman to send requests **import JSON file [qr-payment.postman-collection.json](qr-payment.postman-collection.json)**.
 
 ---
 
