@@ -1,4 +1,4 @@
-# QR Code Payment API
+# QR Code Generation and Payment API
 
 A **Java-based** API with **Spring Boot**, that enables QR code-based transactions, allowing users to generate QR codes for payments and process transactions securely using 
 **AES encryption**.
