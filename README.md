@@ -16,7 +16,7 @@ Follow these steps to set up and run the API:
 
 - **Clone the repository:**
   `git clone https://github.com/musty-codified/qrcode-payments.git`
-- **Build and run the backend project using maven:**
+- **Build and run the API using maven:**
 
   `mvn clean install`
 
