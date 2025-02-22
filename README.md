@@ -35,11 +35,7 @@ The REST API endpoints are prefixed with `/api/v1` due to the context-path setti
 - (POST) [Process Payment](http://localhost:9000/api/v1/payments/process) `/api/v1/payments/process`
 
 
----
-
-## 4. Additional Notes
-
-### 4.1 Testing
+### 3.2 Testing
 
 - Use Postman to send requests: **import JSON file [qr-payment.postman-collection.json](qr-payment.postman-collection.json)**.
 
